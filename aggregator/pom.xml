@@ -17,9 +17,40 @@
 
   <name>Adobe Sign OSGI - Aggregator</name>
 
-
+  <!-- Use JitPack to build from Github -->
+  <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 
   <build>
-    
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
+
+  <dependencies>
+    <dependency>
+	    <groupId>com.github.adobe-sign</groupId>
+	    <artifactId>AdobeSignJavaSdk</artifactId>
+	    <version>v3.0.0</version>
+	  </dependency>
+  </dependencies>
 </project>
