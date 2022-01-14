@@ -7,13 +7,13 @@
   <parent>
     <groupId>com.aftia</groupId>
     <artifactId>adobesign-osgi</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>com.aftia</groupId>
   <artifactId>adobesign-osgi.aggregator</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 
   <name>Adobe Sign OSGI - Aggregator</name>
 
